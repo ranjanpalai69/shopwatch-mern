@@ -1,0 +1,88 @@
+
+.__checkout__address_form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5px;
+}
+
+.__checkout__address_form>div {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    
+}
+
+
+.__checkout__address_form>div>label {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.__checkout__address_form>div>input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+  
+.__checkout__address_form>button[type="submit"] {
+    background-color: #0077ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .__checkout__address_form>button[type='submit'] > svg {
+    vertical-align: middle;
+    width: 30px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .__checkout__address_form>button[type='submit']:hover {
+    background-color: #005ce6;
+  }
+  
+  .__checkout__address_form>button[type='submit']:hover > svg {
+    width: 40px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .__checkout__address_form>button[type="submit"]:focus {
+    outline: none;
+  }
+  
+  .__checkout__address_form>input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #0077ff;
+  }
+  
+  .__checkout__address_form>input::placeholder {
+    color: #ccc;
+  }
+  
+  .__checkout__address_form>input[type="text"]:invalid {
+    border-color: red;
+  }
+
+  .__checkout__error_message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  

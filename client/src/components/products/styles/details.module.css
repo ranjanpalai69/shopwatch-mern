@@ -1,0 +1,363 @@
+._main_single_container {
+  width: 100%;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+._main_single_container > div:first-child {
+  width: 40%;
+  height: 70vh;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+._main_single_container > div:last-child {
+  width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+._main_single_images {
+  display: flex;
+  gap: 20px;
+}
+
+._main_single_images > div:first-child {
+  width: 33%;
+  padding: 10px;
+}
+
+._main_single_images > div:first-child > img {
+  height: 20vh;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 3px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+._main_single_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+
+._main_single_img > img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+/* styles for the buy and add to cart buttons */
+
+._main_single_buttons {
+  width: 83%;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.buyButton,
+.cartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 18px;
+  background-color: #3d3d3d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+
+.buyButton:hover {
+  letter-spacing: 2px;
+  box-shadow: 0 0 35px rgb(180 83 9);
+  background-color: rgb(180 83 9);
+}
+
+.cartButton {
+  background-color: #fca311;
+  background-image: linear-gradient(to right, #cfcbc4 0%, #9211fc 100%);
+  color: black;
+  animation: infinityGlow 2s linear infinite;
+}
+
+@keyframes infinityGlow {
+  0% {
+    background-color: #874caf;
+  }
+
+  50% {
+    background-color: #f4f5ee;
+  }
+
+  100% {
+    background-color: #e75907;
+  }
+}
+
+.cartButton:hover {
+  letter-spacing: 2px;
+  background-color: #1e9bff;
+  box-shadow: 0 0 35px #1e9bff;
+}
+
+/* right side part css */
+
+._main_single_reviews,
+._main_single_price {
+  display: flex;
+}
+
+._main_single_reviews {
+  margin-bottom: 20px;
+}
+
+._main_single_reviews > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 30px;
+  border: none;
+  user-select: none;
+  background-color: green;
+  color: white;
+  border-radius: 3px;
+}
+
+._main_single_reviews > p {
+  margin-left: 10px;
+  font-size: 20px;
+  margin-top: 2px;
+  color: gray;
+}
+
+._main_single_price {
+  margin-top: -25px;
+  display: flex;
+  align-items: center;
+}
+
+._main_single_price > p:first-child {
+  color: black;
+  font-size: 25px;
+}
+
+._main_single_price > p:last-child {
+  margin-left: 20px;
+  color: gray;
+  font-size: 17px;
+}
+
+._main_single_price .originalPrice {
+  text-decoration: line-through;
+}
+
+._main_single_stock_cate_bran > p {
+  font-weight: bold;
+}
+
+._main_single_stock_cate_bran > p > span {
+  color: hotpink;
+  font-size: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  width: 140px;
+}
+
+._main_single_description > span {
+  font-size: 20px;
+}
+
+._main_single_description > p {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+._main_single_reviews_container > div {
+  /* border: 1px solid red; */
+  /* height: 30vh; */
+  border-bottom: 1px solid gray;
+  margin-top: 20px;
+}
+
+._main_single_reviewer > div {
+  display: flex;
+}
+
+._main_single_buttons_reviwes_given {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 30px;
+  border: none;
+  user-select: none;
+  background-color: green;
+  color: white;
+  border-radius: 3px;
+}
+
+._main_single_rater_name {
+  margin-left: 10px;
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+/* See more button css */
+
+._main_single_see_more {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+._main_single_add_review_btn {
+  background-color: #fb641b;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-left: 30px;
+}
+
+._main_single_add_review_see_all {
+  background-color: #ff9f00;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* Recommended css */
+
+._main_single_recommendations > h3 {
+  padding: 10px 0px 1px 30px;
+}
+
+._main_single_recommend_products {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* Tablet CSS */
+
+._tablet_single_details {
+  padding: 0px 20px 20px 20px;
+  overflow: hidden;
+}
+
+/* mobile css  */
+
+._mobile_single_img {
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+}
+
+._mobile_single_column {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+  justify-content: center;
+  border-top: 1px solid black;
+  padding: 5px 0px;
+  overflow-x: auto;
+}
+
+._mobile_single_column > img {
+  width: 20%;
+  cursor: pointer;
+}
+
+._mobile_single_buttons {
+  padding: 0px 10px;
+}
+
+._mobile_single_buttons > button {
+  padding: 5px;
+  font-size: 17px;
+}
+
+._mobile_single_add_review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+._mobile_single_add_review > button {
+  margin-top: auto;
+  margin-left: 0px;
+}
+
+@media (max-width: 1000px) {
+  ._main_single_recommend_products {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  ._main_single_recommend_products {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 542px) {
+  ._main_single_recommend_products {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,23 @@
+.__no_order_head {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.__no_order_head+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.__no_order_head+p>a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+}

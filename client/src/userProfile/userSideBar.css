@@ -1,0 +1,159 @@
+.main__user__profile__section {
+  display: flex;
+  border: 1px solid #fca311;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.698) 0px 5px 15px;
+  border-radius: 5px;
+}
+
+.user_sidebar_main {
+  width: 250px;
+  height: 100vh;
+  background-color: #fca311;
+  /* position: sticky;
+  top: 101px;
+  left: 0; */
+  box-shadow: rgb(0, 0, 0) 0px 10px 20px -20px, rgb(0, 0, 0) 0px 10px 30px -30px,
+    rgb(0, 0, 0) 0px -2px 6px 0px inset;
+}
+
+.user_sidebar_main > h1 {
+  padding: 0%;
+  margin: 0%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-bottom: 2px solid black;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.user_sidebar_main > div > div {
+  border: 1px solid transparent;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0px 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.user_sidebar_main > div > div:hover {
+  background: #000;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.user__icon__size {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.active {
+  background: #000;
+  color: white;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+/* --------------------------------------------------------------------------user component  */
+.each_user_component {
+  width: calc(100% - 250px);
+  margin-top: 40px;
+}
+/* ----------------------------------------------------------------------------------------- */
+
+.profile_avtar {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_profile_div {
+  border: 2px solid black;
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.user_profile_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* --------------------------------------------------------------- form details  */
+
+.user_profile_form_details {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.user_profile_form_details > label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.user_profile_form_details > input {
+  height: 30px;
+}
+
+.user_profile_form_details > button {
+  border: 2px solid transparent;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 4px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.user_profile_form_details > button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+/* responsie  */
+
+@media (max-width: 868px) {
+  .main__user__profile__section {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .user_sidebar_main {
+    width: 100%;
+    height: auto;
+    background-color: #fca311;
+    position: static;
+  }
+
+  .small_profile_design {
+    margin-top: -20px;
+  }
+
+  /*.user_sidebar_main > .small_profile_design > div {
+    
+  } */
+
+  .each_user_component {
+    width: auto;
+  }
+}

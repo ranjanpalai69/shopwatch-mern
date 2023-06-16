@@ -1,0 +1,187 @@
+
+.__checkout__main_body{
+margin-top: -20px ;
+}
+.__checkout__container {
+  width: 70%;
+  height: auto;
+  margin: auto;
+
+  display: flex;
+  gap: 10px;
+
+}
+
+.__checkout__main_form {
+  padding: 20px;
+}
+
+.__checkout__container > div:first-child {
+  width: 75%;
+
+}
+
+.__checkout__container > div:last-child {
+  width: 28%;
+  height: 60vh;
+}
+
+/* checkout stepper */
+
+.__checkout__stepper__indicate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.__checkout__stepper__indicate > p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.__checkout__stepper__indicate > p > span {
+  background-color: #0077ff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+.__checkout__stepper__indicate > p::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #eb0505;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translateY(-50%);
+  padding-left: 245px;
+ 
+}
+
+.__checkout__stepper__indicate > p:last-child::after {
+  content: none;
+}
+
+.__checkout__stepper__indicate > p > span {
+  background-color: #0077ff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.__checkout__stepper__indicate > p.__checkout__step_active {
+  color: blue;
+}
+
+.__checkout__stepper__indicate > p.__checkout__step_active > span {
+  border-color: #000000;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+
+/* spread animation  */
+
+.__checkout__stepper__indicate > p.__checkout__step_active:before {
+  content: "";
+  position: absolute;
+  top: 4%;
+  left: 32%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border: 3px solid red;
+  border-radius: 50%;
+  opacity: 0;
+  animation: spreading 0.5s ease-in-out infinite;
+}
+
+@keyframes spreading {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.__checkout__order_details {
+  background-color: #f5f5f5;
+  padding: 20px;
+
+}
+
+.__checkout__order_details > h3 {
+  border-bottom: 1px solid black;
+}
+
+.__checkout__order_details > p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.__checkout__order_details > p:nth-child(5) {
+  border-bottom: 1px solid black;
+}
+
+/* address end */
+
+/* checkout confirm */
+
+/* responsive */
+
+@media only screen and (max-width: 767px) {
+  .__checkout__container {
+    width: 95%;
+    margin: auto 0px;
+    gap: 10px;
+    flex-direction: column-reverse;
+    box-shadow: none;
+  }
+
+  .__checkout__container > div:last-child,
+  .__checkout__container > div:first-child {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .__checkout__container > div:last-child {
+    border-left: none;
+  }
+
+  .__checkout__stepper__indicate {
+    text-align: center;
+    hyphens: none;
+  }
+
+  .__checkout__stepper__indicate p {
+    margin: 10px;
+  }
+
+  .__checkout__stepper__indicate p::after {
+    content: none;
+  }
+}

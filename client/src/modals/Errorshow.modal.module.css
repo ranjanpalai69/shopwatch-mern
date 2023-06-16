@@ -1,0 +1,57 @@
+._error_show_modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  ._error_show_modal_div {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  }
+  
+  ._error_show_modal_title {
+    margin-top: 0;
+    color: red;
+  }
+  
+  ._error_show_modal_divider {
+    border: none;
+    border-top: 1px solid gray;
+    margin: 1rem 0;
+  }
+  
+  ._error_show_modal_content{
+    background-color: white;
+    border-radius: 8px;
+    max-width: 400px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  ._error_show_modal_button{
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  ._error_show_modal_button:hover {
+    background-color: darkblue;
+  }
+  

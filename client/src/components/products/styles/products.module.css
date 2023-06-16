@@ -1,0 +1,142 @@
+/* main container */
+._main_div {
+  width: 100%;
+  display: flex;
+}
+
+/* without fixed */
+
+
+
+ ._filters {
+  margin-left: 20px;
+  width: 300px;
+  overflow-y: auto;
+  position: sticky;
+  top: 110px;
+  left: 0;
+  height: 105vh;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  
+} 
+
+._main_div> :first-child {
+  margin-top: 10px;
+
+}
+
+
+
+
+/* products container */
+._products_container {
+  width: 85%;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 5px;
+
+}
+
+/* products grid */
+._products {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+
+._label_text {
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="checkbox"]+label {
+  margin-top: 5px;
+}
+
+
+
+._category_div label,
+._brand_div label {
+  font-size: 1.1rem;
+
+
+}
+
+._label_text_price {
+  font-size: 1.1rem;
+}
+
+._category_div input[type="checkbox"],
+._brand_div input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+._category_div label[for^="category-"],
+._brand_div label[for^="category-"] {
+  margin-left: 0.5rem;
+}
+
+._category_div {
+  margin-bottom: 1rem;
+}
+
+._brand_div {
+  margin-bottom: 1rem;
+}
+
+._price_div {
+  margin-bottom: 1rem;
+}
+
+.__select__priceRange{
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  /* border: 1px solid black; */
+}
+
+._apply_button {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width:100%
+}
+
+._apply_button:hover {
+  background-color: #0069d9;
+}
+
+
+._rating_div {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+._rating_div>label {
+  margin-right: 1rem;
+}
+
+._rating_div>select {
+  border: none;
+  background-color: #f2f2f2;
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+

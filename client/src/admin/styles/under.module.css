@@ -1,0 +1,22 @@
+.__admin__under_cons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  
+  .__admin__under_cons__icon {
+    margin-bottom: 1rem;
+  }
+  
+  .__admin__under_h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+.__admin__under_p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  

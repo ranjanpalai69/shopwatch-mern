@@ -1,0 +1,83 @@
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+.__admin__home {
+    display: flex;
+}
+
+
+
+
+.__admin__sidebar {
+    height: 570px;
+    width: 20%;
+    background: #0A2558;
+    transition: all 0.5s ease;
+}
+
+.__admin_head {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    min-width: 60px;
+    text-align: center;
+    margin-left: 30px;
+
+}
+
+.__admin__logoDetails {
+    border-bottom: 1px solid white;
+
+}
+
+
+.__admin__logoName {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.__admin_tab_link {
+    margin-left: -40px;
+}
+
+.__admin_tab_link div {
+    border-bottom: 1px solid wheat;
+    padding: 15px;
+
+}
+
+.__admin_tab_link li {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: yellow;
+    font-size: 20px;
+}
+
+.__admin_tab_link li span {
+    margin-left: 10px;
+}
+
+.__admin__home__right_content {
+    width: 79%;
+    margin-left: 20px;
+}
+
+/* active tab */
+
+
+.activeTab {
+    background-color: white;
+
+}
+
+.activeTab li {
+    color: black !important;
+}

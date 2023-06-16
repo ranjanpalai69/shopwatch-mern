@@ -1,0 +1,28 @@
+.__admin__unauthorized_access {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+  }
+
+  .__admin__unauthorized_access>p+p{
+    font-weight: 800;
+    font-size: 25px;
+    color: blue;
+  }
+  
+  .__admin__unauthorized_access > button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .__admin__unauthorized_access > button:hover {
+    background-color: #0069d9;
+  }

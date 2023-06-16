@@ -1,0 +1,96 @@
+/* Tablet Product Card */
+._tablet_product_card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 99%;
+    margin: 10px;
+
+}
+
+/* Tablet Product Image */
+._tablet_product_image_container {
+    height: 180px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+._tablet_product_image {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    object-fit: cover;
+}
+
+/* Tablet Product Details */
+._tablet_product_details {
+    padding: 30px;
+}
+
+._tablet_product_name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+._tablet_product_brand,
+._tablet_product_category {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+/* start CSS start */
+._tablet_product_rating {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 6px;
+    font-size: 0.9rem;
+}
+
+._tablet_product_rating .star {
+    color: #ccc;
+    margin-right: 0.25rem;
+}
+
+._tablet_product_rating .star_active {
+    color: #ffcc00;
+}
+
+._tablet_product_rating .star_inactive {
+    color: #ddd;
+}
+
+
+/* start CSS end */
+
+._tablet_product_price {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+._tablet_icons_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+._tablet_icon_button_shop,
+._tablet_icon_button_heart {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: #777;
+    cursor: pointer;
+}
+._tablet_icon_button_shop_red_bg{
+    background-color: red;
+    cursor: not-allowed;
+}
+
+._tablet_icon_button_shop:hover,
+._tablet_icon_button_heart:hover {
+    color: #000;
+}

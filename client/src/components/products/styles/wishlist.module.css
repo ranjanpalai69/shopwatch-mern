@@ -1,0 +1,117 @@
+.__parent_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 20px 0;
+  }
+  .__top__ {
+    height: 80px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .__top__ h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 5px;
+  }
+  
+  .__top__ p {
+    font-size: 1rem;
+  }
+  
+  
+ 
+  
+  
+  @media only screen and (max-width: 1200px) {
+    .__parent_container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .__parent_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .__parent_container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  .__child_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .__child_container:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  .__child_container p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .__child_container img {
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    height: 150px;
+  }
+  
+  .__buttons__div>button:nth-child(1) {
+    width: 100%;
+    padding: 10px;
+    background-color: #1976d2;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+
+  }
+  
+
+  .__buttons__div>button:nth-child(1):hover {
+    background-color: #1565c0;
+  }
+
+  .__buttons__div>button:nth-child(2) {
+    width: 100%;
+    padding: 10px;
+    background-color: #e53935;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .__buttons__div>button:nth-child(2):hover {
+    background-color: #c62828;
+  }
