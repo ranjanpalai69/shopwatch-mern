@@ -249,7 +249,7 @@ function Navbar() {
       <Tablet>
         <nav className={styles._tablet_navbar}>
           <div className={styles._tablet_logo}>
-            <h1 onClick={() => navigate("/")}>ShopWatch</h1>
+            <h1 onClick={() => navigate("/")}>ShopWatch..</h1>
           </div>
           <div className={styles._tablet_search}>
             <SearchInput />
@@ -390,7 +390,7 @@ function Navbar() {
         <nav className={styles.navbar}>
           <div className={styles.logo}>
             <h1 onClick={() => navigate("/")}>
-              my<span>Shopping</span>
+              Shop<span>Watch..</span>
             </h1>
           </div>
 
