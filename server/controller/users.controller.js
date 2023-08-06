@@ -320,7 +320,7 @@ const forgetPassword = async (req, res) => {
         const expirationDate = Date.now() + 300000;
         // const expirationDate = Date.now() + 120000;
 
-        const resetLink = `https://my-shoping-frontend.vercel.app//reset_password/token/${token}`;
+        const resetLink = `https://shopwatch-pearl.vercel.app/reset_password/token/${token}`;
         const message = `Hello, ${user.name}.\n to reset your password, please click on the following link:\n${resetLink}.\nThis token will expire in 5 minutes.`;
 
         try {
